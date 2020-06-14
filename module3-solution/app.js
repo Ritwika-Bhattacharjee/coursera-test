@@ -10,7 +10,6 @@ angular.module('NarrowItDownApp', [])
 function foundItemsDirective() {
   var ddo = {
     templateUrl: 'menuList.html',
-    //link: MenuItemsDirectiveLink,
 	scope: {
       found: '<',
       error: '<',
@@ -29,26 +28,6 @@ function MenuItemsDirectiveController(){
 	var narrow = this;
 
 
-}
-
-function MenuItemsDirectiveLink(scope, element, attrs, controller){
-	/*scope.$watch('narrow.findSearchItem()', function(newValue, oldValue){
-		if(newValue==-1){
-			displayErrorMsg();
-		}else{
-			hideErrorMsg();
-		}
-	});
-
-	function displayErrorMsg(){
-		var errorElement = element.find("div");
-		element.css("display", "block");
-	}
-
-	function hideErrorMsg(){
-		var errorElement = element.find("div");
-		element.css("display", "none");
-	}*/
 }
 
 NarrowItDownController.$inject['MenuSearchService'];
